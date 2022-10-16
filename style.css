@@ -1,0 +1,54 @@
+main {
+  display: grid;
+  background-color: rgb(242, 242, 242);
+  grid-template-areas: "bevitel reszletek";
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+#szamGombok {
+  border: 1px solid gray;
+  padding: 10px;
+  grid-area: bevitel;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+/* #szamGombok button:last-child {
+    grid-column-start: 2;
+} */
+#reszletek {
+  padding: 10px;
+  grid-area: reszletek;
+  display: grid;
+  grid-template-areas:
+    "ujraGomb ujraGomb"
+    "bevittpinP bevittpinP"
+    "bevittPinInp bevittPinInp"
+    "konzolraGomb konzolraGomb"
+    "kozepreChck kozepreP";
+}
+#ujraGomb {
+  grid-area: ujraGomb;
+  width: 50px;
+}
+#bevittPinP {
+  grid-area: bevittpinP;
+}
+#bevittPinInp {
+  grid-area: bevittPinInp;
+  width: 50px;
+}
+#konzolraGomb {
+  grid-area: konzolraGomb;
+  width: 80px;
+}
+#kozepreChck {
+  grid-area: kozepreChck;
+  width: 15px;
+}
+#kozepreP {
+  grid-area: kozepreP;
+}
+.kozepre {
+  grid-column-start: 2;
+}
